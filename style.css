@@ -1,0 +1,255 @@
+/* Styles for the navigation menu */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    color: #fff;
+    z-index: 999;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000;
+    color: #fff;
+    padding: 20px;
+    top: 0;
+    z-index: 999;
+  }
+  
+  nav ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    list-style: none;
+  }
+  
+  nav ul li a {
+    border-radius: 5px;
+    color: yellow;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px;
+    transition: all 0.3s ease;
+  }
+  
+  nav ul li a:hover {
+    background-color: yellow;
+    color: black;
+  }
+  
+  /* Styles for the hero section */
+  .hero {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: yellow;
+    padding: 50px;
+  }
+  
+  .hero-image {
+    
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 30px;
+  }
+  
+  .hero-image img {
+    border-radius: 5px;
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+  }
+  
+  .hero-text {
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+  }
+  
+  .hero-text h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+  
+  .hero-text p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+  }
+  
+  .hero-text button {
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    background-color: yellow;
+    border: none;
+    border-radius: 5px;
+    color: black;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .hero-text button:hover {
+    background-color: black;
+    color: yellow;
+  }
+  
+  /* Styles for the car list section */
+  .cars {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    padding: 50px;
+    color: white;
+  }
+  
+  .car {
+    margin: 20px;
+    max-width: 300px;
+    text-align: center;
+  }
+  
+  .car img {
+    height: 350px;
+    width: 500px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+  }
+
+  .car img:hover {
+    scale: 1.1;
+  }
+  
+  .car h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .car p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+  
+  /* Styles for the footer section */
+  footer {
+    background-color: black;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Media queries for responsive design */
+  @media only screen and (min-width: 768px) {
+    /* Styles for navigation menu */
+    nav {
+      flex-wrap: wrap;
+    }
+    
+    nav ul {
+      margin-left: auto;
+    }
+    
+    /* Styles for hero section */
+    .hero {
+      flex-direction: row;
+    }
+    
+    .hero-image {
+      width: 50%;
+      margin-right: 30px;
+      margin-bottom: 0;
+    }
+    
+    .hero-text {
+      width: 50%;
+      text-align: left;
+    }
+    
+    /* Styles for car list section */
+    .car {
+      max-width: calc(33.33333% - 40px);
+    }
+  }
+  
+  @media only screen and (min){}
+
+  /* добавен стил за бутоните */
+  .bu {
+    padding: 10px 20px;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: black;
+  background-color: yellow;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  }
+
+  .bu:hover {
+    background-color: black;
+    color: yellow;
+  }
+button {
+  padding: 10px 20px;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #f8b61c;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* добавен стил за формата */
+form {
+  margin: 20px;
+  padding: 20px;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+}
+
+/* добавен стил за текста на формата */
+form h2, form label {
+  color: #333;
+}
+
+/* добавен стил за полетата на формата */
+form input[type="text"], form input[type="email"], form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: none;
+  background-color: #fff;
+  font-size: 16px;
+}
+
+/* добавен стил за валидирането на формата */
+form input[type="text"]:invalid, form input[type="email"]:invalid, form textarea:invalid {
+  border: 2px solid red;
+}
+
+form input[type="text"]:valid, form input[type="email"]:valid, form textarea:valid {
+  border: 2px solid green;
+}
+
+/* добавен стил за footer */
+footer {
+  background-color: #212121;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
